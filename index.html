@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Brittain Software develops professional call center systems for restaurants, hotels, and hospitality operators."
+    />
+    <title>Brittain Software | Hospitality Call Center Systems</title>
+    <script>
+      if (location.pathname === "/brittain") {
+        location.replace(`${location.pathname}/${location.search}${location.hash}`);
+      }
+    </script>
+    <link rel="preload" href="assets/brittain-operations-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Brittain Software header">
+      <div class="brand-lockup" aria-label="Brittain Software">
+        <span class="brand-mark" aria-hidden="true">BS</span>
+        <span class="brand-name">Brittain Software</span>
+      </div>
+      <a class="contact-pill" href="tel:+17573238766">Contact</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/brittain-operations-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Hospitality call-center systems</p>
+          <h1 id="hero-title">
+            Hospitality call centers for reservations and guest service.
+          </h1>
+          <p class="hero-copy">
+            Brittain Software designs Phase I call-center workflows for
+            restaurants and hotels, turning busy phone traffic into controlled,
+            measurable operations.
+          </p>
+          <a class="primary-action" href="tel:+17573238766">Contact (757) 323-8766</a>
+        </div>
+
+        <div class="hero-proof" aria-label="Project focus areas">
+          <span>Phase I SCH Reservations</span>
+          <span>The Strand Phase I</span>
+          <span>Restaurant reservations</span>
+          <span>Hotel guest services</span>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-labelledby="proof-title">
+        <div class="section-heading">
+          <p class="section-kicker">Current focus</p>
+          <h2 id="proof-title">Purpose-built systems for high-touch hospitality teams.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <h3>Phase I SCH Reservations</h3>
+            <p>
+              Restaurant reservation call handling with structured intake,
+              booking-ready context, and staff visibility for peak periods.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <h3>The Strand Phase I</h3>
+            <p>
+              Hotel call-center workflows that support guest-service questions,
+              routing, and practical handoffs to on-property teams.
+            </p>
+          </article>
+
+          <article class="project-card project-card-dark">
+            <span class="project-number">03</span>
+            <h3>Operator-first deployment</h3>
+            <p>
+              Lean Phase I builds focused on answering the phone better before
+              expanding into deeper automation and reporting.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="systems-band" aria-labelledby="systems-title">
+        <div class="systems-copy">
+          <p class="section-kicker">How it works</p>
+          <h2 id="systems-title">Call-center software that fits the front line.</h2>
+          <p>
+            Each build starts with the operating reality: who calls, what staff
+            need to know, where the handoff happens, and how managers confirm
+            the system is helping.
+          </p>
+
+          <ul class="capability-list">
+            <li>Voice intake paths for reservations, guest questions, and routing.</li>
+            <li>Structured summaries so teams can act without replaying the call.</li>
+            <li>Phase I reporting that makes volume, missed calls, and outcomes visible.</li>
+          </ul>
+        </div>
+
+        <div class="system-map" aria-label="Call center workflow map">
+          <div class="map-node node-live">
+            <span>Live Call</span>
+            <strong>Voice Intake</strong>
+          </div>
+          <div class="map-rail" aria-hidden="true"></div>
+          <div class="map-node">
+            <span>Decision Layer</span>
+            <strong>Restaurant or Hotel Flow</strong>
+          </div>
+          <div class="map-rail" aria-hidden="true"></div>
+          <div class="map-node">
+            <span>Team Handoff</span>
+            <strong>Summary, Routing, Follow-up</strong>
+          </div>
+          <div class="map-signal map-signal-one" aria-hidden="true"></div>
+          <div class="map-signal map-signal-two" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="contact-band" aria-labelledby="contact-title">
+        <div class="contact-content">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Talk through a Phase I hospitality call-center build.</h2>
+          <address>
+            Brittain Software<br />
+            4177 Cheswick Lane<br />
+            Virginia Beach, VA 23455
+          </address>
+          <a class="contact-number" href="tel:+17573238766">(757) 323-8766</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Brittain Software</span>
+      <span>Virginia Beach, VA</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
