@@ -15,5 +15,5 @@ Then open `http://127.0.0.1:4177`.
 The site is published with GitHub Pages at:
 
 ```text
-https://johnbcooper4177-tech.github.io/brittain-software/
+https://brittainsoftware.com/
 ```
