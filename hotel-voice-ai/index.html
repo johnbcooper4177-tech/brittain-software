@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hotel Voice-AI example for The Strand Resort, including concierge answering, reservation support, routing, and post-call intelligence."
+    />
+    <title>Hotel Voice-AI Example | Brittain-Ai</title>
+    <link rel="preload" href="../assets/brittain-operations-hero.png" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="detail-page">
+    <header class="site-header" aria-label="Brittain-Ai header">
+      <a class="brand-lockup" href="../" aria-label="Brittain-Ai home">
+        <span class="brand-mark" aria-hidden="true">BAi</span>
+        <span class="brand-name">Brittain-Ai</span>
+      </a>
+      <a class="contact-pill" href="tel:+17573238766">Contact</a>
+    </header>
+
+    <main>
+      <section class="detail-hero" aria-labelledby="hotel-title">
+        <img
+          class="hero-image"
+          src="../assets/brittain-operations-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="detail-hero-content">
+          <p class="eyebrow">Hotel Voice-AI example</p>
+          <h1 id="hotel-title">Hotel Voice-AI for The Strand Resort.</h1>
+          <p>
+            A production hotel phone system where Michelle answers as the phone
+            concierge and Rex steps in for reservation work, all within a
+            controlled live-call workflow.
+          </p>
+          <div class="detail-actions">
+            <a class="primary-action" href="tel:+17573238766">Contact (757) 323-8766</a>
+            <a class="secondary-action" href="../">Back to overview</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-band" aria-labelledby="hotel-agents-title">
+        <div class="section-heading">
+          <p class="section-kicker">Agent roles</p>
+          <h2 id="hotel-agents-title">One hotel number, two specialized agents.</h2>
+        </div>
+
+        <div class="agent-grid">
+          <article class="agent-card">
+            <span class="agent-badge">Michelle</span>
+            <h3>Hotel phone concierge</h3>
+            <p>
+              Michelle is the warm first voice for the property. She answers
+              common hotel questions, recognizes routing needs, and hands
+              reservation intent to Rex without sending the caller out of the
+              conversation.
+            </p>
+            <ul class="detail-list">
+              <li>Property, room, amenity, policy, and guest-service knowledge.</li>
+              <li>Front desk routing for current-guest needs.</li>
+              <li>Golf routing for tee times, golf packages, and golf questions.</li>
+            </ul>
+          </article>
+
+          <article class="agent-card agent-card-dark">
+            <span class="agent-badge">Rex</span>
+            <h3>Reservations agent</h3>
+            <p>
+              Rex handles sales-oriented reservation calls after Michelle
+              identifies the intent. He supports availability, rates, booking
+              requests, confirmations, changes, cancellations, and human handoff
+              when the caller asks for staff.
+            </p>
+            <ul class="detail-list">
+              <li>Availability and rate conversations.</li>
+              <li>Reservation request capture and booking support.</li>
+              <li>Escape routes to front desk, golf, or human reservations.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-workflow-band" aria-labelledby="hotel-workflow-title">
+        <div class="detail-copy">
+          <p class="section-kicker">Live workflow</p>
+          <h2 id="hotel-workflow-title">The call stays natural while the system controls the path.</h2>
+          <p>
+            The guest hears a helpful concierge experience. Behind the scenes,
+            the system keeps each agent inside its role, activates the right
+            reservation tools, and records the outcome for review.
+          </p>
+        </div>
+
+        <div class="flow-diagram flow-diagram-hotel" aria-label="Hotel Voice-AI call flow">
+          <div class="flow-node flow-node-source">Caller</div>
+          <div class="flow-branch">
+            <div class="flow-node flow-node-agent">Michelle</div>
+            <div class="flow-path-grid">
+              <div class="flow-node">Hotel knowledge</div>
+              <div class="flow-node">Front desk route</div>
+              <div class="flow-node">Golf route</div>
+              <div class="flow-node flow-node-agent">Rex reservations</div>
+            </div>
+          </div>
+          <div class="flow-node flow-node-result">Reservation system</div>
+          <div class="flow-node flow-node-result">Post-call intelligence</div>
+        </div>
+      </section>
+
+      <section class="detail-band" aria-labelledby="hotel-flows-title">
+        <div class="section-heading">
+          <p class="section-kicker">Call flows</p>
+          <h2 id="hotel-flows-title">Built for the calls hotels actually receive.</h2>
+        </div>
+
+        <div class="flow-card-grid">
+          <article class="flow-card">
+            <span>01</span>
+            <h3>Knowledge-only calls</h3>
+            <p>
+              Michelle answers questions about rooms, policies, amenities,
+              checkout, parking, breakfast, and property details without routing
+              the caller away.
+            </p>
+          </article>
+          <article class="flow-card">
+            <span>02</span>
+            <h3>On-property routing</h3>
+            <p>
+              Current-guest needs, billing, receipts, housekeeping, urgent
+              support, and front desk requests can route to the right property
+              team with a short handoff.
+            </p>
+          </article>
+          <article class="flow-card">
+            <span>03</span>
+            <h3>Reservations handoff</h3>
+            <p>
+              Rate, availability, booking, confirmation, cancellation, discount,
+              and promotion intent moves from Michelle to Rex inside the same
+              live call.
+            </p>
+          </article>
+          <article class="flow-card">
+            <span>04</span>
+            <h3>Human reservation support</h3>
+            <p>
+              If a caller asks for a person, Rex can route to human reservation
+              staff while preserving the context already gathered.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intelligence-band" aria-labelledby="hotel-intelligence-title">
+        <div class="detail-copy">
+          <p class="section-kicker">Operations layer</p>
+          <h2 id="hotel-intelligence-title">Every call becomes useful operating data.</h2>
+          <p>
+            The live agent workflow is paired with post-call services that help
+            managers understand demand, review quality, refine knowledge, and
+            see where callers were answered, transferred, or converted into
+            reservation work.
+          </p>
+        </div>
+
+        <div class="intelligence-grid">
+          <span>Recording capture</span>
+          <span>Transcript generation</span>
+          <span>Quality review</span>
+          <span>Transfer tracking</span>
+          <span>Reservation outcomes</span>
+          <span>Knowledge updates</span>
+          <span>Billing feature tracking</span>
+          <span>Analytics integration</span>
+        </div>
+      </section>
+
+      <section class="contact-band" aria-labelledby="hotel-contact-title">
+        <div class="contact-content">
+          <p class="section-kicker">Contact</p>
+          <h2 id="hotel-contact-title">Talk through a Hotel Voice-AI deployment.</h2>
+          <address>
+            Brittain Software<br />
+            4177 Cheswick Lane<br />
+            Virginia Beach, VA 23455
+          </address>
+          <a class="contact-number" href="tel:+17573238766">(757) 323-8766</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Brittain-Ai</span>
+      <span>Hotel Voice-AI Example</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
