@@ -196,45 +196,57 @@ a {
 
 .hero-login-panel {
   align-self: end;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  width: min(820px, 100%);
-  margin-top: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 8px;
-  padding: 14px;
-  background: rgba(6, 18, 19, 0.48);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(18px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: min(900px, 100%);
+  margin-top: 30px;
 }
 
 .login-button {
   position: relative;
-  min-height: 70px;
+  flex: 1 1 330px;
+  min-height: 76px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 16px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.26);
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0 24px 0 28px;
+  border: 2px solid rgba(255, 255, 255, 0.36);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06)),
-    rgba(8, 24, 26, 0.62);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.06)),
+    rgba(8, 24, 26, 0.78);
   color: var(--white);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1.25;
-  text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.26),
-    0 16px 34px rgba(0, 0, 0, 0.24);
+    inset 0 1px 0 rgba(255, 255, 255, 0.32),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.18),
+    0 18px 42px rgba(0, 0, 0, 0.32);
   transition:
     transform 180ms ease,
     background 180ms ease,
     border-color 180ms ease,
     box-shadow 180ms ease;
+}
+
+.login-button::after {
+  width: 11px;
+  height: 11px;
+  flex: 0 0 auto;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.login-button span {
+  flex: 1 1 auto;
 }
 
 .login-button-hotel {
@@ -256,6 +268,13 @@ a {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.34),
     0 20px 42px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.18),
+    0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .login-button:focus-visible {
@@ -288,6 +307,18 @@ a {
   font-size: 2.5rem;
   line-height: 1.08;
   letter-spacing: 0;
+}
+
+.proof-band .section-heading {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.proof-band .section-heading h2 {
+  font-size: clamp(1.35rem, 1.62vw, 1.72rem);
+  line-height: 1.18;
+  white-space: nowrap;
 }
 
 .section-heading .section-kicker {
@@ -538,11 +569,14 @@ address {
     font-size: 3.45rem;
   }
 
-  .hero-login-panel,
   .project-grid,
   .systems-band,
   .section-heading {
     grid-template-columns: 1fr;
+  }
+
+  .proof-band .section-heading h2 {
+    white-space: normal;
   }
 
   .systems-band {
@@ -596,14 +630,13 @@ address {
   }
 
   .hero-login-panel {
-    grid-template-columns: 1fr;
     gap: 12px;
-    padding: 12px;
   }
 
   .login-button {
+    flex-basis: 100%;
     min-height: 58px;
-    padding: 14px;
+    padding: 0 18px;
     font-size: 0.84rem;
   }
 
