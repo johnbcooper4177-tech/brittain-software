@@ -334,8 +334,14 @@ a {
   color: var(--teal);
 }
 
+.product-heading {
+  display: block;
+}
+
 .product-heading h2 {
-  max-width: 930px;
+  max-width: none;
+  font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+  white-space: nowrap;
 }
 
 .product-showcase {
@@ -1119,6 +1125,10 @@ address {
   }
 
   .proof-band .section-heading h2 {
+    white-space: normal;
+  }
+
+  .product-heading h2 {
     white-space: normal;
   }
 
