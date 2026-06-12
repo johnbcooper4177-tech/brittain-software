@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Advanced Hotel Call Analytics from Brittain-Ai, showing future-scale revenue, service, transfer, upsell, and guest-demand intelligence from hotel phone calls."
+    />
+    <title>Hotel Call Analytics | Brittain-Ai</title>
+    <link rel="preload" href="../assets/brittain-operations-hero.png" as="image" />
+    <link rel="stylesheet" href="../styles.css?v=analytics-1" />
+  </head>
+  <body class="detail-page analytics-page analytics-hotel-page">
+    <header class="site-header site-header-nav" aria-label="Brittain-Ai header">
+      <a class="brand-lockup" href="../" aria-label="Brittain-Ai home">
+        <span class="brand-mark" aria-hidden="true">BAi</span>
+        <span class="brand-name">Brittain-Ai</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../">Overview</a>
+        <a href="../hotel-voice-ai/">Hotel Voice-AI</a>
+        <a href="../restaurant-voice-ai/">Restaurant Voice-AI</a>
+      </nav>
+      <a class="contact-pill" href="tel:+18433332100">Contact</a>
+    </header>
+
+    <main>
+      <section class="analytics-hero" aria-labelledby="hotel-analytics-title">
+        <img
+          class="hero-image"
+          src="../assets/brittain-operations-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="analytics-hero-content">
+          <h1 id="hotel-analytics-title">Hotel Call Analytics at Property Scale</h1>
+          <p class="analytics-hero-lead">
+            Every guest call becomes revenue, friction, and service intelligence.
+          </p>
+          <p class="analytics-slogan">
+            The phone is already your busiest survey. Now it reports back.
+          </p>
+          <a class="primary-action" href="tel:+18433332100">Contact (843) 333-2100</a>
+        </div>
+      </section>
+
+      <section class="analytics-metrics-band" aria-labelledby="hotel-metrics-title">
+        <div class="analytics-label" id="hotel-metrics-title">
+          Illustrative 30-day operating view after tens of thousands of calls
+        </div>
+        <div class="analytics-kpi-grid">
+          <article class="analytics-kpi">
+            <span>Calls analyzed</span>
+            <strong>42,380</strong>
+            <p>All inbound hotel calls classified and reviewed.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-gold">
+            <span>Reservation intent</span>
+            <strong>$3.8M</strong>
+            <p>Potential booking value identified from guest conversations.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-coral">
+            <span>Missed upsell moments</span>
+            <strong>7,420</strong>
+            <p>Upgrade, package, and add-on opportunities left on the table.</p>
+          </article>
+          <article class="analytics-kpi">
+            <span>Room-and-rate questions</span>
+            <strong>14,860</strong>
+            <p>Availability, room type, policy, and package demand signals.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-gold">
+            <span>Transfer failures prevented</span>
+            <strong>2,130</strong>
+            <p>Routing issues surfaced before they became guest friction.</p>
+          </article>
+          <article class="analytics-kpi">
+            <span>Review coverage</span>
+            <strong>91%</strong>
+            <p>Calls scored with AI quality review and manager-ready notes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section" aria-labelledby="hotel-cockpit-title">
+        <div class="analytics-heading">
+          <h2 id="hotel-cockpit-title">Analytics Cockpit</h2>
+          <p>One command center for revenue, service, and operational performance.</p>
+        </div>
+
+        <div class="analytics-cockpit analytics-cockpit-hotel">
+          <article class="chart-panel chart-panel-wide">
+            <h3>Revenue Risk Waterfall</h3>
+            <p>Potential reservation value over 30 days.</p>
+            <div class="waterfall-chart" aria-label="Revenue risk waterfall">
+              <div class="waterfall-axis">
+                <span>$4.0M</span>
+                <span>$2.0M</span>
+                <span>$0</span>
+              </div>
+              <div class="waterfall-bars">
+                <span style="--h: 86%; --c: var(--teal);" data-label="$3.8M"></span>
+                <span style="--h: 40%; --c: var(--coral);" data-label="- $1.42M"></span>
+                <span style="--h: 24%; --c: var(--coral);" data-label="- $0.64M"></span>
+                <span style="--h: 18%; --c: var(--gold);" data-label="+ $0.36M"></span>
+                <span style="--h: 52%; --c: var(--teal-deep);" data-label="$2.13M"></span>
+              </div>
+              <div class="waterfall-labels">
+                <span>Intent</span>
+                <span>Missed</span>
+                <span>Rate</span>
+                <span>Recovered</span>
+                <span>Captured</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Call Volume Trend</h3>
+            <p>Guest demand by week.</p>
+            <svg class="line-chart" viewBox="0 0 360 190" role="img" aria-label="Hotel call volume trend">
+              <polyline points="20,150 60,142 100,150 140,84 180,96 220,72 260,88 300,58 340,66" />
+              <polyline class="line-chart-alt" points="20,126 60,132 100,124 140,116 180,122 220,102 260,106 300,92 340,96" />
+              <g>
+                <circle cx="140" cy="84" r="5" />
+                <circle cx="300" cy="58" r="5" />
+              </g>
+            </svg>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Purpose Mix</h3>
+            <p>One primary reason per call.</p>
+            <div class="donut-chart hotel-donut" aria-label="Purpose mix">
+              <strong>42,380</strong>
+              <span>calls</span>
+            </div>
+            <div class="legend-list">
+              <span>Reservations <b>34%</b></span>
+              <span>Room &amp; Rate <b>28%</b></span>
+              <span>Services <b>14%</b></span>
+              <span>Packages <b>11%</b></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Friction Matrix</h3>
+            <p>Topic by impact level.</p>
+            <div class="heatmap-grid" aria-label="Hotel friction matrix">
+              <span class="heat-low"></span><span class="heat-mid"></span><span class="heat-high"></span><span class="heat-high"></span>
+              <span class="heat-low"></span><span class="heat-mid"></span><span class="heat-mid"></span><span class="heat-high"></span>
+              <span class="heat-low"></span><span class="heat-low"></span><span class="heat-mid"></span><span class="heat-mid"></span>
+            </div>
+            <div class="matrix-labels">
+              <span>Reservations</span>
+              <span>Rates</span>
+              <span>Transfers</span>
+              <span>Policies</span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Sentiment Arc</h3>
+            <p>Opening-to-closing caller tone.</p>
+            <svg class="area-chart" viewBox="0 0 360 190" role="img" aria-label="Hotel sentiment arc">
+              <path d="M20 142 L55 124 L92 132 L128 82 L164 104 L204 96 L242 118 L280 86 L320 112 L340 104 L340 160 L20 160 Z" />
+              <polyline points="20,142 55,124 92,132 128,82 164,104 204,96 242,118 280,86 320,112 340,104" />
+            </svg>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Upsell Opportunity</h3>
+            <p>Top missed offer categories.</p>
+            <div class="bar-list">
+              <span style="--w: 92%"><b>Oceanfront upgrades</b><em>1,842</em></span>
+              <span style="--w: 68%"><b>Late checkout</b><em>1,326</em></span>
+              <span style="--w: 58%"><b>Breakfast packages</b><em>1,118</em></span>
+              <span style="--w: 44%"><b>Spa services</b><em>842</em></span>
+              <span style="--w: 28%"><b>Golf packages</b><em>418</em></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section analytics-insights-section" aria-labelledby="hotel-insights-title">
+        <div class="analytics-heading">
+          <h2 id="hotel-insights-title">Manager Insight Feed</h2>
+          <p>Actionable patterns surfaced from every conversation.</p>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight-row">
+            <span>Oceanfront king demand surge</span>
+            <p>Oceanfront king requests are up 27% over the last 30 days. Capture more with proactive offers.</p>
+            <strong>Revenue</strong>
+          </article>
+          <article class="insight-row">
+            <span>Same-night calls are highest propensity</span>
+            <p>Same-day callers are 3.4x more likely to book when upgraded by Voice-AI.</p>
+            <strong>Revenue</strong>
+          </article>
+          <article class="insight-row">
+            <span>Golf package opportunities missed</span>
+            <p>418 golf package opportunities appeared during tee-time and room inquiries.</p>
+            <strong>Upsell</strong>
+          </article>
+          <article class="insight-row">
+            <span>Transfer failures spike at Front Desk</span>
+            <p>Most transfer failures occur from 3-5 PM. Consider staffing or route adjustments.</p>
+            <strong>Operational</strong>
+          </article>
+          <article class="insight-row">
+            <span>Laundry and amenity knowledge gaps</span>
+            <p>High confusion around laundry turnaround and amenity availability. Update scripts and source facts.</p>
+            <strong>Coaching</strong>
+          </article>
+          <article class="insight-row">
+            <span>Rate leakage on AAA and government rates</span>
+            <p>$682K in rate leakage detected. Voice-AI now protects policy and captures better matches.</p>
+            <strong>Revenue</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section device-section" aria-labelledby="hotel-devices-title">
+        <div class="analytics-heading">
+          <h2 id="hotel-devices-title">Your Analytics, Anywhere</h2>
+          <p>Real-time intelligence across the screens your team already uses.</p>
+        </div>
+
+        <div class="device-grid">
+          <article class="device-card">
+            <div class="device device-desktop" aria-hidden="true">
+              <div class="device-screen">
+                <div class="screen-grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <svg viewBox="0 0 260 90">
+                  <polyline points="8,72 42,66 76,70 110,42 144,48 178,34 212,44 252,24" />
+                </svg>
+              </div>
+            </div>
+            <h3>Desktop</h3>
+            <p>Full analytics cockpit for PC or Mac reporting, revenue reviews, and team alignment.</p>
+          </article>
+
+          <article class="device-card">
+            <div class="device device-tablet" aria-hidden="true">
+              <div class="device-screen device-screen-light">
+                <span class="screen-alert">Oceanfront demand surge</span>
+                <span class="screen-alert">Same-night booking propensity</span>
+                <span class="screen-alert">Transfer failure hotspot</span>
+              </div>
+            </div>
+            <h3>Tablet</h3>
+            <p>Manager insight feed for daily priorities, huddles, and property walk-throughs.</p>
+          </article>
+
+          <article class="device-card">
+            <div class="device device-phone" aria-hidden="true">
+              <div class="device-screen">
+                <span class="phone-alert">Revenue Risk</span>
+                <strong>$632,000</strong>
+                <span class="phone-alert">Transfer spike</span>
+                <strong>3-5 PM</strong>
+              </div>
+            </div>
+            <h3>Phone</h3>
+            <p>Revenue-risk alerts and key operating metrics for leaders on the move.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-capability-band" aria-labelledby="hotel-capabilities-title">
+        <div class="analytics-heading">
+          <h2 id="hotel-capabilities-title">Capabilities Built for Hotel Operations</h2>
+        </div>
+        <div class="analytics-capability-grid">
+          <span>Revenue Intelligence</span>
+          <span>Transfer Intelligence</span>
+          <span>Service Recovery</span>
+          <span>Upsell Tracking</span>
+          <span>Demand by Room Type</span>
+          <span>Knowledge Gap Detection</span>
+          <span>Staff Coaching</span>
+          <span>QA Readiness</span>
+        </div>
+      </section>
+
+      <section class="contact-band" aria-labelledby="hotel-analytics-contact-title">
+        <div class="contact-content">
+          <p class="section-kicker">Contact</p>
+          <h2 id="hotel-analytics-contact-title">Turn hotel phone volume into operating intelligence.</h2>
+          <address>
+            Brittain Software<br />
+            4177 Cheswick Lane<br />
+            Virginia Beach, VA 23455
+          </address>
+          <a class="contact-number" href="tel:+18433332100">(843) 333-2100</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Brittain-Ai</span>
+      <span>Hotel Call Analytics</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

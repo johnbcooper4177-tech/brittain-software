@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Advanced Restaurant Call Analytics from Brittain-Ai, showing future-scale reservation, menu, large-party, waitlist, sentiment, and service intelligence from restaurant phone calls."
+    />
+    <title>Restaurant Call Analytics | Brittain-Ai</title>
+    <link rel="preload" href="../assets/brittain-operations-hero.png" as="image" />
+    <link rel="stylesheet" href="../styles.css?v=analytics-1" />
+  </head>
+  <body class="detail-page analytics-page analytics-restaurant-page">
+    <header class="site-header site-header-nav" aria-label="Brittain-Ai header">
+      <a class="brand-lockup" href="../" aria-label="Brittain-Ai home">
+        <span class="brand-mark" aria-hidden="true">BAi</span>
+        <span class="brand-name">Brittain-Ai</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../">Overview</a>
+        <a href="../hotel-voice-ai/">Hotel Voice-AI</a>
+        <a href="../restaurant-voice-ai/">Restaurant Voice-AI</a>
+      </nav>
+      <a class="contact-pill" href="tel:+18433332100">Contact</a>
+    </header>
+
+    <main>
+      <section class="analytics-hero analytics-hero-restaurant" aria-labelledby="restaurant-analytics-title">
+        <img
+          class="hero-image"
+          src="../assets/brittain-operations-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="analytics-hero-content">
+          <h1 id="restaurant-analytics-title">Restaurant Call Analytics for Peak Demand</h1>
+          <p class="analytics-hero-lead">
+            Turn the host stand's phone traffic into booking, menu, and service intelligence.
+          </p>
+          <p class="analytics-slogan">
+            Every ring is either a guest helped, a table won, or a pattern waiting to be found.
+          </p>
+          <a class="primary-action" href="tel:+18433332100">Contact (843) 333-2100</a>
+        </div>
+      </section>
+
+      <section class="analytics-metrics-band" aria-labelledby="restaurant-metrics-title">
+        <div class="analytics-label" id="restaurant-metrics-title">
+          Illustrative 30-day operating view after tens of thousands of restaurant calls
+        </div>
+        <div class="analytics-kpi-grid">
+          <article class="analytics-kpi">
+            <span>Calls analyzed</span>
+            <strong>58,240</strong>
+            <p>All inbound restaurant calls classified and summarized.</p>
+          </article>
+          <article class="analytics-kpi">
+            <span>Reservation intents</span>
+            <strong>21,870</strong>
+            <p>Booking signals, conversion paths, and no-show risk captured.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-coral">
+            <span>Large-party opportunities</span>
+            <strong>6,320</strong>
+            <p>High-value parties surfaced before they disappear into voicemail.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-gold">
+            <span>Menu questions answered</span>
+            <strong>9,840</strong>
+            <p>Demand for pricing, specials, allergies, hours, and policies.</p>
+          </article>
+          <article class="analytics-kpi analytics-kpi-coral">
+            <span>Missed follow-up moments</span>
+            <strong>3,760</strong>
+            <p>Staff-review, waitlist, and private-event opportunities recovered.</p>
+          </article>
+          <article class="analytics-kpi">
+            <span>QA coverage</span>
+            <strong>94%</strong>
+            <p>Calls reviewed for accuracy, tone, handoff, and outcome quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section" aria-labelledby="restaurant-cockpit-title">
+        <div class="analytics-heading">
+          <h2 id="restaurant-cockpit-title">Analytics Cockpit</h2>
+          <p>Real conversations. Real patterns. Real performance.</p>
+        </div>
+
+        <div class="analytics-cockpit analytics-cockpit-restaurant">
+          <article class="chart-panel">
+            <h3>Booking Funnel</h3>
+            <p>From call to seated guest.</p>
+            <div class="funnel-chart" aria-label="Restaurant booking funnel">
+              <span style="--w: 100%"><b>Calls</b><em>58,240</em></span>
+              <span style="--w: 74%"><b>Reservation intent</b><em>21,870</em></span>
+              <span style="--w: 58%"><b>Captured</b><em>17,560</em></span>
+              <span style="--w: 38%"><b>Tables seated</b><em>16,430</em></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Calls by Daypart</h3>
+            <p>When the phone loads the host stand.</p>
+            <div class="daypart-chart" aria-label="Calls by daypart">
+              <span style="--h: 22%"><b>7a-11a</b><em>2,120</em></span>
+              <span style="--h: 68%"><b>11a-2p</b><em>7,840</em></span>
+              <span style="--h: 60%"><b>2p-5p</b><em>6,950</em></span>
+              <span style="--h: 94%"><b>5p-9p</b><em>24,610</em></span>
+              <span style="--h: 32%"><b>9p-11p</b><em>2,720</em></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Reservation Purpose</h3>
+            <p>Why guests are calling.</p>
+            <div class="donut-chart restaurant-donut" aria-label="Reservation purpose">
+              <strong>21,870</strong>
+              <span>intents</span>
+            </div>
+            <div class="legend-list">
+              <span>Dining reservation <b>64%</b></span>
+              <span>Large party / event <b>18%</b></span>
+              <span>Private dining <b>9%</b></span>
+              <span>Takeout <b>6%</b></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Menu Demand</h3>
+            <p>Top recurring questions.</p>
+            <div class="bar-list">
+              <span style="--w: 88%"><b>Menu recommendations</b><em>24%</em></span>
+              <span style="--w: 76%"><b>Drink prices</b><em>18%</em></span>
+              <span style="--w: 62%"><b>Happy hour</b><em>14%</em></span>
+              <span style="--w: 54%"><b>Dietary options</b><em>12%</em></span>
+              <span style="--w: 38%"><b>Kids menu</b><em>8%</em></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Large-Party Leakage</h3>
+            <p>Blocked, missed, or staff-review required.</p>
+            <div class="donut-chart leakage-donut" aria-label="Large-party leakage">
+              <strong>6,320</strong>
+              <span>opportunities</span>
+            </div>
+            <div class="legend-list">
+              <span>Captured <b>50%</b></span>
+              <span>Missed / no follow-up <b>38%</b></span>
+              <span>Went elsewhere <b>11%</b></span>
+            </div>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Guest Sentiment</h3>
+            <p>Rave, neutral, and complaint balance.</p>
+            <div class="sentiment-gauge" aria-label="Guest sentiment">
+              <span></span>
+              <strong>82%</strong>
+              <em>Positive sentiment</em>
+            </div>
+            <div class="legend-list">
+              <span>Positive <b>82%</b></span>
+              <span>Neutral <b>13%</b></span>
+              <span>Negative <b>5%</b></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section analytics-insights-section" aria-labelledby="restaurant-insights-title">
+        <div class="analytics-heading">
+          <h2 id="restaurant-insights-title">Operator Insight Feed</h2>
+          <p>AI surfaces what matters this week.</p>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight-row">
+            <span>Large-party follow-up gaps</span>
+            <p>2,420 large-party calls missed a structured follow-up. Recovery opportunity: roughly $186K in potential revenue.</p>
+            <strong>Revenue</strong>
+          </article>
+          <article class="insight-row">
+            <span>Takeout routing opportunities</span>
+            <p>24% of takeout calls could not be routed cleanly. Simplify and capture more off-premise revenue.</p>
+            <strong>Routing</strong>
+          </article>
+          <article class="insight-row">
+            <span>Patio and window seating demand</span>
+            <p>18% of calls requested patio or window seating. Consider proactive offers during peak dayparts.</p>
+            <strong>Demand</strong>
+          </article>
+          <article class="insight-row">
+            <span>Waitlist policy friction</span>
+            <p>Wait time and callback policy confusion appears in 11% of waitlist-related calls.</p>
+            <strong>Friction</strong>
+          </article>
+          <article class="insight-row">
+            <span>Exact drink-price questions</span>
+            <p>Drink price inquiries are up 26% over the last 30 days. Add live pricing to menu guidance.</p>
+            <strong>Menu</strong>
+          </article>
+          <article class="insight-row">
+            <span>Event and private dining demand</span>
+            <p>Private dining and event inquiries are up 19%. Flag warm leads for staff outreach.</p>
+            <strong>Events</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-section device-section" aria-labelledby="restaurant-devices-title">
+        <div class="analytics-heading">
+          <h2 id="restaurant-devices-title">Insight Anywhere</h2>
+          <p>Designed for how restaurant teams work: office, floor, and on the move.</p>
+        </div>
+
+        <div class="device-grid">
+          <article class="device-card">
+            <div class="device device-desktop" aria-hidden="true">
+              <div class="device-screen">
+                <div class="screen-grid restaurant-screen-grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <svg viewBox="0 0 260 90">
+                  <polyline points="8,74 42,74 76,70 110,54 144,48 178,24 212,44 252,30" />
+                </svg>
+              </div>
+            </div>
+            <h3>Desktop</h3>
+            <p>Comprehensive cockpit for PC or Mac review by operators, owners, and multi-unit teams.</p>
+          </article>
+
+          <article class="device-card">
+            <div class="device device-tablet" aria-hidden="true">
+              <div class="device-screen">
+                <div class="tablet-bars">
+                  <span style="--w: 86%">Patio</span>
+                  <span style="--w: 68%">Window</span>
+                  <span style="--w: 54%">Bar seating</span>
+                  <span style="--w: 42%">Booth</span>
+                  <span style="--w: 34%">High top</span>
+                </div>
+              </div>
+            </div>
+            <h3>Tablet</h3>
+            <p>Actionable takeaways and seating demand at a glance during manager huddles.</p>
+          </article>
+
+          <article class="device-card">
+            <div class="device device-phone" aria-hidden="true">
+              <div class="device-screen device-screen-light">
+                <span class="phone-alert">Large-party alert</span>
+                <strong>12</strong>
+                <span class="phone-alert">Booking risk</span>
+                <strong>18</strong>
+              </div>
+            </div>
+            <h3>Phone</h3>
+            <p>Real-time alerts for booking risks, large-party opportunities, and follow-up gaps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-capability-band" aria-labelledby="restaurant-capabilities-title">
+        <div class="analytics-heading">
+          <h2 id="restaurant-capabilities-title">Built for Restaurant Performance</h2>
+        </div>
+        <div class="analytics-capability-grid">
+          <span>Reservation Intelligence</span>
+          <span>Menu Demand</span>
+          <span>Large-Party Leakage</span>
+          <span>Seating Preference Tracking</span>
+          <span>Waitlist Friction</span>
+          <span>Takeout Routing</span>
+          <span>Staff Coaching</span>
+          <span>QA Readiness</span>
+        </div>
+      </section>
+
+      <section class="contact-band" aria-labelledby="restaurant-analytics-contact-title">
+        <div class="contact-content">
+          <p class="section-kicker">Contact</p>
+          <h2 id="restaurant-analytics-contact-title">Turn every conversation into better decisions and better nights.</h2>
+          <address>
+            Brittain Software<br />
+            4177 Cheswick Lane<br />
+            Virginia Beach, VA 23455
+          </address>
+          <a class="contact-number" href="tel:+18433332100">(843) 333-2100</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Brittain-Ai</span>
+      <span>Restaurant Call Analytics</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
