@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" role="img" aria-labelledby="title desc">
+  <title id="title">AI and communications platform lockup</title>
+  <desc id="desc">xAI plus OpenAI plus Twilio plus Amazon Web Services plus Brittain-Ai.</desc>
+  <defs>
+    <filter id="softShadow" x="-8%" y="-30%" width="116%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.24" />
+    </filter>
+    <linearGradient id="brittainGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8b35b" />
+      <stop offset="1" stop-color="#4ddbd3" />
+    </linearGradient>
+    <style>
+      .chip {
+        fill: rgba(255, 255, 255, 0.08);
+        stroke: rgba(255, 255, 255, 0.2);
+        stroke-width: 1;
+      }
+
+      .label {
+        fill: #f7faf9;
+        font-family: Inter, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .small {
+        fill: rgba(255, 255, 255, 0.66);
+        font-family: Inter, Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+      }
+
+      .plus {
+        fill: #d8b35b;
+        font-family: Inter, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 900;
+      }
+    </style>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect class="chip" x="2" y="16" width="112" height="64" rx="8" />
+    <path d="M28 62 L50 34 H63 L41 62 Z" fill="#f7faf9" opacity="0.94" />
+    <text class="label" x="72" y="57" font-size="28" text-anchor="middle">xAI</text>
+
+    <text class="plus" x="136" y="58">+</text>
+
+    <rect class="chip" x="166" y="16" width="144" height="64" rx="8" />
+    <g transform="translate(190 34)" fill="none" stroke="#f7faf9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 0 C32 0 38 8 35 17 C42 22 41 34 32 39 C29 48 17 51 10 44 C0 45 -8 36 -6 27 C-14 20 -10 8 0 6 C5 -2 16 -5 22 0 Z" opacity="0.96" />
+      <path d="M6 7 L26 18 L26 34" opacity="0.72" />
+      <path d="M35 17 L17 27 L0 18" opacity="0.72" />
+      <path d="M10 44 L10 23 L22 0" opacity="0.72" />
+    </g>
+    <text class="label" x="265" y="58" font-size="24" text-anchor="middle">OpenAI</text>
+
+    <text class="plus" x="332" y="58">+</text>
+
+    <rect class="chip" x="362" y="16" width="134" height="64" rx="8" />
+    <circle cx="392" cy="48" r="19" fill="#f22f46" />
+    <circle cx="386" cy="42" r="4.2" fill="#ffffff" />
+    <circle cx="398" cy="42" r="4.2" fill="#ffffff" />
+    <circle cx="386" cy="54" r="4.2" fill="#ffffff" />
+    <circle cx="398" cy="54" r="4.2" fill="#ffffff" />
+    <text class="label" x="448" y="57" font-size="23" text-anchor="middle">Twilio</text>
+
+    <text class="plus" x="518" y="58">+</text>
+
+    <rect class="chip" x="548" y="16" width="152" height="64" rx="8" />
+    <text class="label" x="610" y="55" font-size="32" text-anchor="middle">aws</text>
+    <path d="M585 63 C604 73 635 70 651 58" fill="none" stroke="#ff9900" stroke-width="4" stroke-linecap="round" />
+    <path d="M649 58 L661 57 L654 66" fill="none" stroke="#ff9900" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text class="small" x="669" y="55" text-anchor="middle">CLOUD</text>
+
+    <text class="plus" x="722" y="58">+</text>
+
+    <rect class="chip" x="752" y="16" width="146" height="64" rx="8" />
+    <rect x="772" y="29" width="38" height="38" rx="8" fill="url(#brittainGradient)" />
+    <text x="791" y="53" fill="#101718" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="middle">BAi</text>
+    <text class="label" x="850" y="53" font-size="20" text-anchor="middle">Brittain</text>
+    <text class="small" x="850" y="65" text-anchor="middle">AI</text>
+  </g>
+</svg>

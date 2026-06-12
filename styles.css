@@ -1064,7 +1064,15 @@ a {
   color: var(--white);
 }
 
+.platform-contact-band {
+  position: relative;
+  min-height: 610px;
+  overflow: hidden;
+}
+
 .contact-content {
+  position: relative;
+  z-index: 1;
   width: min(860px, 100%);
 }
 
@@ -1089,6 +1097,21 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.32);
   background: rgba(255, 255, 255, 0.1);
   color: var(--white);
+}
+
+.contact-platform-lockup {
+  position: absolute;
+  right: clamp(24px, 5vw, 72px);
+  bottom: clamp(64px, 7vw, 88px);
+  display: flex;
+  justify-content: flex-end;
+  width: min(82vw, 1120px);
+}
+
+.contact-platform-graphic {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .site-footer {
@@ -1955,6 +1978,7 @@ address {
   .product-showcase,
   .agent-grid,
   .systems-band,
+  .platform-contact-band,
   .detail-workflow-band,
   .intelligence-band,
   .section-heading {
@@ -1975,6 +1999,17 @@ address {
 
   .systems-band {
     gap: 42px;
+  }
+
+  .platform-contact-band {
+    min-height: auto;
+  }
+
+  .contact-platform-lockup {
+    position: static;
+    width: min(100%, 720px);
+    margin-top: 42px;
+    justify-content: flex-start;
   }
 
   .system-map {
@@ -2144,6 +2179,11 @@ address {
   .site-footer {
     flex-direction: column;
     padding: 22px 18px;
+  }
+
+  .contact-platform-lockup {
+    justify-content: flex-start;
+    width: 100%;
   }
 }
 
