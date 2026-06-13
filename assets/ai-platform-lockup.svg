@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1138 96" role="img" aria-labelledby="title desc">
   <title id="title">AI and communications platform lockup</title>
-  <desc id="desc">xAI plus OpenAI plus Twilio plus Amazon Web Services plus Brittain-Ai.</desc>
+  <desc id="desc">xAI plus OpenAI plus Twilio plus Amazon Web Services plus Cloudflare plus Brittain-Ai.</desc>
   <defs>
     <filter id="softShadow" x="-8%" y="-30%" width="116%" height="160%">
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.24" />
@@ -76,10 +76,20 @@
 
     <text class="plus" x="722" y="58">+</text>
 
-    <rect class="chip" x="752" y="16" width="146" height="64" rx="8" />
-    <rect x="772" y="29" width="38" height="38" rx="8" fill="url(#brittainGradient)" />
-    <text x="791" y="53" fill="#101718" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="middle">BAi</text>
-    <text class="label" x="850" y="53" font-size="20" text-anchor="middle">Brittain</text>
-    <text class="small" x="850" y="65" text-anchor="middle">AI</text>
+    <rect class="chip" x="752" y="16" width="196" height="64" rx="8" />
+    <g transform="translate(776 38) scale(0.78)">
+      <path d="M25 34 H64 C70 34 75 30 75 24 C75 18 70 14 64 14 C62 6 55 1 47 1 C41 1 36 4 33 9 C30 8 27 7 24 7 C16 7 9 13 7 21 C3 22 0 25 0 29 C0 32 3 34 7 34 Z" fill="#f38020" />
+      <path d="M32 25 H78 C83 25 86 28 85 32 C84 36 80 38 75 38 H25 C20 38 16 36 16 32 C16 28 20 25 25 25 Z" fill="#faae40" />
+      <path d="M34 25 H79 C81 25 83 26 84 27 C82 29 79 30 75 30 H37 C34 30 32 28 34 25 Z" fill="#ffffff" opacity="0.72" />
+    </g>
+    <text class="label" x="894" y="56" font-size="19" text-anchor="middle">Cloudflare</text>
+
+    <text class="plus" x="970" y="58">+</text>
+
+    <rect class="chip" x="1000" y="16" width="136" height="64" rx="8" />
+    <rect x="1018" y="29" width="38" height="38" rx="8" fill="url(#brittainGradient)" />
+    <text x="1037" y="53" fill="#101718" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900" text-anchor="middle">BAi</text>
+    <text class="label" x="1092" y="53" font-size="18" text-anchor="middle">Brittain</text>
+    <text class="small" x="1092" y="65" text-anchor="middle">AI</text>
   </g>
 </svg>

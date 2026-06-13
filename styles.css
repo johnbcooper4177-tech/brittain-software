@@ -1105,7 +1105,7 @@ address {
   bottom: clamp(64px, 7vw, 88px);
   display: flex;
   justify-content: flex-end;
-  width: min(82vw, 1120px);
+  width: min(90vw, 1296px);
 }
 
 .contact-platform-graphic {
