@@ -82,3 +82,48 @@ if (canvas && context) {
     draw();
   });
 }
+
+const menuRoot = document.querySelector("[data-menu-root]");
+
+if (menuRoot) {
+  const menuTrigger = menuRoot.querySelector("[data-menu-trigger]");
+  const menuPanel = menuRoot.querySelector("[data-menu-panel]");
+  const menuLinks = menuRoot.querySelectorAll(".menu-link");
+
+  const normalizePath = (path) => {
+    const trimmed = path.replace(/\/$/, "");
+    return trimmed || "/";
+  };
+
+  menuLinks.forEach((link) => {
+    const linkPath = normalizePath(new URL(link.href).pathname);
+    const currentPath = normalizePath(window.location.pathname);
+
+    if (linkPath === currentPath) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
+
+  const setMenuOpen = (isOpen) => {
+    menuRoot.classList.toggle("is-open", isOpen);
+    menuTrigger.setAttribute("aria-expanded", String(isOpen));
+    menuPanel.hidden = !isOpen;
+  };
+
+  menuTrigger.addEventListener("click", () => {
+    setMenuOpen(!menuRoot.classList.contains("is-open"));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!menuRoot.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuRoot.classList.contains("is-open")) {
+      setMenuOpen(false);
+      menuTrigger.focus();
+    }
+  });
+}
