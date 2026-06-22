@@ -1288,6 +1288,11 @@ a {
   color: var(--gold);
 }
 
+.advantage-dark-band .guardrail-node span,
+.advantage-dark-band .guardrail-path span {
+  color: var(--gold);
+}
+
 .guardrail-flow {
   display: grid;
   gap: 14px;
