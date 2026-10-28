@@ -27,3 +27,13 @@ https://guest360.brittainsoftware.com/app/.
 
 GitHub main initially had no protection or required checks. This bootstrap adds
 site-validation CI and establishes a required-check PR integration path.
+
+## Serving-provider correction after authenticated inspection
+
+Cloudflare Pages project brittain-software is the actual public serving provider,
+using direct uploads and no Git connection. GitHub Pages was a byte-identical
+secondary copy before the change; that parity did not establish provider identity.
+The previous Cloudflare production deployment was
+fdf5d82f-06ee-4deb-9d7c-1b3a79204f5f. The new accepted website was uploaded to
+Cloudflare production as c774215b-1139-4578-b6e5-dc6c8456749c. Both public domains
+now match the accepted HTML/CSS. No routing or authentication changes were needed.

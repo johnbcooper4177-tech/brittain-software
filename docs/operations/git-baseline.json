@@ -17,12 +17,16 @@
   "deployment": {
     "applicable": true,
     "aligned": true,
-    "provider": "github_pages",
+    "provider": "cloudflare_pages",
     "source_branch": "main",
     "source_path": "/",
-    "build_id": 1230838754,
     "source_sha": "3ee506b9a4408ab289e5169f8131fd7de83a8975",
-    "url": "https://brittainsoftware.com/"
+    "url": "https://brittainsoftware.com/",
+    "project": "brittain-software",
+    "account_id": "1d83da6b1ee3479cb2e2ee87fda6d89d",
+    "deployment_id": "fdf5d82f-06ee-4deb-9d7c-1b3a79204f5f",
+    "method": "direct_upload",
+    "secondary_github_pages_build_id": 1230838754
   },
   "validation": {
     "passed": true,
@@ -44,9 +48,9 @@
     ]
   },
   "known_limits": [
-    "This is a static GitHub Pages site. The generic deployment helper has no GitHub Pages lane; use github-pages-release.md.",
-    "Pages legacy hosting automatically publishes main; runtime merges require both source integration and deployment authorization.",
-    "Baseline records the accepted pre-change source, not every later release."
+    "Production uses Cloudflare Pages direct uploads, with no Git connection. GitHub Pages is a separate secondary deployment.",
+    "The generic deployment helper has no Cloudflare Pages lane; use cloudflare-pages-release.md.",
+    "Baseline describes the accepted pre-change source; releases/guest360-2026-10-27.json records the deployed new source."
   ],
   "operating_standard": {
     "version": "1.0.0",
