@@ -1,0 +1,38 @@
+{
+  "source_sha": "bc734f1386eedfd88fb26f675459083d4b7ac570",
+  "feature_sha": "dcdf844e77dc3b518e8a0082d8ae43d9e2ffe6f0",
+  "source_pr": "https://github.com/johnbcooper4177-tech/brittain-software/pull/1",
+  "provider": "cloudflare_pages",
+  "project": "brittain-software",
+  "deployment_id": "c774215b-1139-4578-b6e5-dc6c8456749c",
+  "rollback_deployment_id": "fdf5d82f-06ee-4deb-9d7c-1b3a79204f5f",
+  "rollback_source_sha": "3ee506b9a4408ab289e5169f8131fd7de83a8975",
+  "public_domains": [
+    "https://brittainsoftware.com/",
+    "https://www.brittainsoftware.com/"
+  ],
+  "public_html_css_match": true,
+  "desktop_mobile_visual_review": "passed",
+  "guest360_href": "https://guest360.brittainsoftware.com/app/",
+  "asset_sha256": {
+    "assets/ai-platform-lockup.svg": "263d26a6b2f8b8383555ded806bf448b360456881d3470088046f37fb988c69a",
+    "assets/bai-advantage-hero.png": "4d62e932794b44a5f9b00cf9501c03e3603b30b1d134b38b9e7cebc334f353fc",
+    "assets/bai-logo.png": "ed72d564d9d9027897f9035b144c938af0fd27608de687791972c3041d6a248e",
+    "assets/bai-logo.svg": "097e0821aef3bbb7d2c4f150cb4a275e12421e6e8641491ef407b9a710ee0255",
+    "assets/brittain-operations-hero.png": "9617a12255c3367b869e566bb6b3523c4c46a10faa94e81adb052348986e44bf",
+    "assets/hotel-analytics-platform-devices.png": "1dbc4589478548167c1f281468ec4c4c9a67fdae874f48f2c38c3c34f1a711ef",
+    "assets/restaurant-analytics-platform-devices.png": "af1296dbd76794f5784e5d5ca6eaec0d29e82f2cb0f5079edc54e55aa80d926f",
+    "bai-advantage/index.html": "e4c8c05f30957347d4e3eff2f57bc324edb77f311639ab1a5871ddc52b3ccd87",
+    "hotel-call-analytics/index.html": "86bce666d95f070b1485ba28d2980516e5b84c2b232d635d83d3994c8021e4c1",
+    "hotel-voice-ai/index.html": "e3d7c83671a2c4ed47f5d6dbdcf9b776ce9e4470363a0e248bdfe819c34ee5c2",
+    "index.html": "afbcb22cd5b84c04b2e70e9d2396b676874447e66740f6cd3d028b75b6197bbf",
+    "privacy/index.html": "a37cd7c330bc2253219ee9e1ade2b1f1876242e3e98c71b8b802601825a958a5",
+    "restaurant-call-analytics/index.html": "94a0be0c95b7706deb49d885004a7dea309853b5a5c11cb1aafdb647f5d1ecf6",
+    "restaurant-voice-ai/index.html": "39fcdaafb927d80441c568a9f5781995ab3c67c1b8bd63029159cffa8904dd45",
+    "script.js": "9f1e417a3c4f4e6d87ef2fdd7cd16708b3955b357373d60ed16da44e513cfc5f",
+    "sms-opt-in/index.html": "0cdb287907bb9d02976718915bd15abceef2a04c2080913cc2914c1a87334b95",
+    "styles.css": "86ee01a66a369d7a00ba5d4d8d9e20dde2d9e54b721b9b913f7d82d7ac6282ab",
+    "terms/index.html": "a01fda75870c14a0df79348a3cce848bd4ba769dc72b48350acddeeed1922b26"
+  },
+  "acceptance": "Agent verified deployed public website; no claim of Guest360 application functional acceptance."
+}
