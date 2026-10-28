@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "operating_standard_version": "1.0.0",
+  "repository": "johnbcooper4177-tech/brittain-software",
+  "canonical_remote": "origin",
+  "default_branch": "main",
+  "baseline_path": "docs/operations/git-baseline.json",
+  "non_runtime_paths": [
+    "docs/**",
+    "README.md",
+    "AGENTS.md",
+    ".gitignore",
+    "scripts/**"
+  ],
+  "xai_release_paths": [],
+  "infrastructure_paths": [
+    ".github/**",
+    "CNAME",
+    ".nojekyll"
+  ],
+  "shared_path_rules": [],
+  "components": {
+    "website": {
+      "paths": [
+        "*.html",
+        "styles.css",
+        "script.js",
+        "assets/**"
+      ],
+      "validation_profile": "site",
+      "build_unit": "static_site",
+      "deployment_profile": "external_pages",
+      "services": [
+        "github-pages"
+      ],
+      "state_authority": "none",
+      "rollback_evidence_required": true
+    }
+  },
+  "validation_profiles": {
+    "site": {
+      "tier": "full",
+      "commands": [
+        [
+          "python3",
+          "scripts/validate_site.py"
+        ],
+        [
+          "git",
+          "diff",
+          "--check"
+        ]
+      ]
+    },
+    "unsupported_deploy": {
+      "tier": "operational",
+      "commands": [
+        [
+          "python3",
+          "scripts/validate_site.py",
+          "--unsupported-deploy-gate"
+        ]
+      ]
+    }
+  },
+  "classification_validation_profiles": {
+    "non_runtime": "site",
+    "xai_release": "site",
+    "infrastructure": "site",
+    "ambiguous": "site"
+  },
+  "deployment_profiles": {
+    "external_pages": {
+      "lane": "none",
+      "routine": false,
+      "components": [
+        "website"
+      ],
+      "expected_reconciliation": "ALIGNED",
+      "operational_gate_profile": "external_pages"
+    }
+  },
+  "operational_gate_profiles": {
+    "external_pages": {
+      "identity": "unsupported_deploy",
+      "no_active_deployment": "unsupported_deploy",
+      "pre_health": "unsupported_deploy",
+      "rollback_executable": "unsupported_deploy",
+      "post_health": "unsupported_deploy",
+      "acceptance": "unsupported_deploy"
+    }
+  },
+  "runner_profile": {
+    "preferred": "none",
+    "labels": [],
+    "protected_main_only": true,
+    "production_push_trigger": false,
+    "concurrency_group": "brittain-software-release",
+    "cancel_in_progress": false
+  },
+  "external_release_profiles": {},
+  "fallback": {
+    "unknown_paths": "expand_and_block_deploy",
+    "components": [
+      "website"
+    ],
+    "validation_profiles": [
+      "site"
+    ]
+  }
+}
