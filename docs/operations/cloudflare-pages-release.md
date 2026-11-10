@@ -31,3 +31,13 @@ reset Git main or change DNS, authentication, or unrelated services for rollback
 The generic Git helper has no Cloudflare Pages deployment lane. The policy's
 none lane intentionally refuses generic deploy operations; use this proven path.
 Routine CLI login may be expired even when the browser dashboard is signed in.
+
+## Guest360 manual (separate project)
+
+The home page's G360 Manual button links to https://guest360-manual.brittainsoftware.com/.
+The manual is not part of this repository or of the brittain-software Pages
+project. It is a separate direct-upload Pages project, guest360-manual, behind
+Cloudflare Access. Uploading this website never changes the manual, and
+uploading the manual never changes this website. Keep the manual's files out of
+this public repository. Do not remove or loosen its Access protection without
+the owner's decision.
